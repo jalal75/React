@@ -59,7 +59,7 @@ handelDown(){
     return(
       <button
         type="button"
-        onClick={()=>{this.props.priority(this.props.index, this.props.index+1)}}>
+        onClick={()=>{this.props.priority(this.props.index, this.props.index+1, this.props.done)}}>
         &#8595;
       </button>
     )
