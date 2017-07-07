@@ -55,6 +55,7 @@ import './App.css';
 
 handelDown(){
   if (this.props.index < this.props.Length-1) {
+
     return(
       <button
         type="button"
@@ -94,6 +95,12 @@ handelsave(event){
 
 handelTextClick(){
   this.setState({
+    editToDo: {
+      description: this.props.description,
+      done: this.props.done
+    }
+  })
+  this.setState({
       showEdit: !this.state.showEdit
     });
 }
@@ -107,12 +114,3 @@ render() {
   }
 
 }
-
-
-
-
-
-// case 'keyboard-arrow-up':
-//   return (
-//     <g><path d="M7.41 15.41l4.59-4.58 4.59 4.58 1.41-1.41-6-6-6 6z"></path></g>
-//   );
