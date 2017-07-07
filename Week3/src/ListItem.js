@@ -98,11 +98,10 @@ handelTextClick(){
     editToDo: {
       description: this.props.description,
       done: this.props.done
-    }
+    },
+    showEdit: !this.state.showEdit
   })
-  this.setState({
-      showEdit: !this.state.showEdit
-    });
+
 }
 
 render() {
